@@ -1,0 +1,54 @@
+.header-wrapper {
+  height: 60px;
+  background-color: #AAD7D9;
+  display: flex;
+
+  .header-container {
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-container__left {
+      display: inline-flex;
+      align-items: flex-end;
+
+      img {
+        width: 52px;
+      }
+
+      .title {
+        margin-left: 3px;
+        font-size: 24px;
+        color: #2b7f8c;
+      }
+    }
+
+    .header-container__right {
+        display: flex;
+        align-items: center;
+
+        button {
+            border: none;
+            padding: 5px 20px;
+            font-size: 16px;
+        }
+
+        .login-btn {
+            margin-right: 10px;
+            background-color: white;
+            color: #3e577e;
+        }
+
+        .register-btn {
+            color: white;
+            background-color: #227979;
+            padding: 5px 25px;
+        }
+
+        
+    }
+  }
+}
