@@ -1,4 +1,6 @@
 #root-page-wrapper {
+  background-color: #eeeeee;
+
   header {
     position: fixed;
     top: 0;
@@ -10,8 +12,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 120px;
+    margin: 0 auto;
 
-    margin-top: 60px;
-    background-color: #eeeeee;
+    width: 750px;
+    max-width: 95%;
   }
 }
