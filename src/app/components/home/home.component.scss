@@ -7,22 +7,25 @@
 
   .home-page-wrapper__top {
     width: 100%;
-    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     .router-link {
-      width: 100%;
       display: inline-flex;
       align-items: center;
-      background-color: #93a2dc57;
-      height: 25px;
+      background-color: #f7efe6;
+      height: 30px;
+      border-radius: 3px;
 
       .home-img {
         height: 100%;
         width: 25px;
+        padding: 0 5px;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #b9c3ec;
+        background-color: #efe0cd;
 
         img {
           width: 16px;
@@ -40,8 +43,8 @@
     .search-bar {
       position: relative;
       margin: 20px 0;
-      height: 25px;
-      width: 180px;
+      height: 30px;
+      width: 200px;
 
       input {
         height: 100%;
@@ -60,7 +63,7 @@
 
       .search-icon {
         border-radius: 0 2px 2px 0;
-        width: 25px;
+        width: 30px;
         height: 100%;
         background-color: #c7c8cc7d;
         display: flex;
@@ -72,8 +75,8 @@
         right: 0;
 
         img {
-          width: 14px;
-          height: 14px;
+          width: 16px;
+          height: 16px;
         }
       }
     }

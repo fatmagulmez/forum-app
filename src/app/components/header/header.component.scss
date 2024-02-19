@@ -1,6 +1,6 @@
 .header-wrapper {
-  height: 60px;
-  background-color: #AAD7D9;
+  height: 80px;
+  background-color: white;
   display: flex;
 
   .header-container {
@@ -12,17 +12,36 @@
     align-items: center;
 
     .header-container__left {
-      display: inline-flex;
-      align-items: flex-end;
-
-      img {
-        width: 52px;
-      }
+      position: relative;
+      display: flex;
+      align-items: center;
 
       .title {
+        position: relative;
         margin-left: 3px;
         font-size: 24px;
-        color: #2b7f8c;
+        color: rgba(96,88,89,255);
+      }
+
+      .background-pattern {
+        
+        .background-pattern__left {
+          position: absolute;
+          left: 0;
+          top: -5px;
+          width: 70px;
+          height: 20px;
+          background-color: rgba(240,225,171,255);
+        }
+
+        .background-pattern__right {
+          position: absolute;
+          right: 0;
+          bottom: -4px;
+          width: 90px;
+          height: 14px;
+          background-color: rgba(237,232,168,255);
+        }
       }
     }
 
@@ -32,20 +51,22 @@
 
         button {
             border: none;
-            padding: 5px 20px;
+            padding: 8px 20px;
             font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
         }
 
         .login-btn {
             margin-right: 10px;
-            background-color: white;
-            color: #3e577e;
+            background-color: rgba(242,242,242,255);
+            color: rgba(161,161,161,255);
         }
 
         .register-btn {
             color: white;
-            background-color: #227979;
-            padding: 5px 25px;
+            background-color: #debe48;
+            padding: 8px 25px;
         }
 
         
