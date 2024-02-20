@@ -1,0 +1,35 @@
+.category-row {
+  background-color: #f7efe6;
+  border-radius: 2px;
+  .category-col {
+    .category-col-title {
+      color: #eab1ae;
+      margin: 10px 0;
+      font-size: 14px;
+    }
+  }
+  .category-first-col {
+    border-right: 2px solid white;
+    .first-col-title {
+      color: #595959;
+      font-weight: 400;
+      font-size: 14px;
+      margin-left: 5px;
+    }
+
+    .col-icon {
+        img {
+            width: 18px;
+        }
+    }
+  }
+  .category-second-col {
+    border-right: 2px solid white;
+
+    .second-col-title {
+      color: #eab1ae;
+      margin: 10px 0;
+      font-size: 14px;
+    }
+  }
+}

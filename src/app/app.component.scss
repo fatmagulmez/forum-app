@@ -14,8 +14,98 @@
     align-items: center;
     padding-top: 130px;
     margin: 0 auto;
+    max-width: 80%;
 
-    width: 750px;
-    max-width: 95%;
+    .home-page-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+    
+      .home-page-wrapper__top {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        .router-link {
+          display: inline-flex;
+          align-items: center;
+          background-color: #f7efe6;
+          height: 30px;
+          border-radius: 3px;
+    
+          .home-img {
+            height: 100%;
+            width: 25px;
+            padding: 0 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #efe0cd;
+    
+            img {
+              width: 16px;
+              height: 16px;
+            }
+          }
+          .text {
+            cursor: pointer;
+            margin-left: 10px;
+            width: 100%;
+            color: #3e577e;
+          }
+        }
+    
+        .search-bar {
+          position: relative;
+          margin: 20px 0;
+          height: 30px;
+          width: 200px;
+    
+          input {
+            height: 100%;
+            width: 100%;
+            border: none;
+            border-radius: 4px;
+          }
+    
+          .input-text {
+            position: absolute;
+            top: 5px;
+            left: 7px;
+            color: #00000080;
+            font-size: 14px;
+          }
+    
+          .search-icon {
+            border-radius: 0 4px 4px 0;
+            width: 30px;
+            height: 100%;
+            background-color: #c7c8cc7d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            position: absolute;
+            top: 0;
+            right: 0;
+    
+            img {
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+      }
+    
+      .home-page-wrapper__bottom {
+        background-color: white;
+        height: 600px;
+        width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+    }
   }
 }

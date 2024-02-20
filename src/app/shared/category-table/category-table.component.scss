@@ -1,0 +1,24 @@
+.category-table {
+    .category-table-header {
+        padding: 5px 10px;
+        background-color: #e59394;
+
+        display: flex;
+        align-items: center;
+
+        .header-title {
+            font-size: 16px;
+            color: white;
+        }
+    }
+
+    .subtitle {
+        background-color: white;  
+        padding: 5px;
+
+        .subtitle-col {
+            font-size: 14px;
+            color: #e59394;
+        }
+    } 
+}

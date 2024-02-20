@@ -30,7 +30,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/bootstrap/dist/css/bootstrap-grid.css"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -95,9 +96,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "./node_modules/bootstrap/dist/css/bootstrap-grid.css"
-
+              "src/styles.scss"
             ],
             "scripts": []
           }
