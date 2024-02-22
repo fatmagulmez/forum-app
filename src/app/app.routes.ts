@@ -7,8 +7,13 @@ export const routes: Routes = [
         .then(component => component.HomePageComponent)
     },
     {
-        path: "category",
-        loadComponent: () => import("./components/category-page/category-page.component")
-        .then(component => component.CategoryPageComponent)
+        path: "topic",
+        loadComponent: () => import("./components/topic-page/topic-page.component")
+        .then(component => component.TopicPageComponent)
+    },
+    {
+        path: "topic-detail",
+        loadComponent: () => import("./components/topic-detail-page/topic-detail-page.component")
+        .then(component => component.TopicDetailPageComponent)
     }
 ];

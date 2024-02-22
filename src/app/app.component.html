@@ -2,14 +2,14 @@
   <header>
     <app-header></app-header>
   </header>
-  <main class="main-container">
+  <main class="main-container" *ngIf="!isVisibleBanner">
     <div class="home-page-wrapper">
       <div class="home-page-wrapper__top">
         <div class="router-link">
           <div class="home-img">
             <img src="assets/images/home.png" alt="" />
           </div>
-          <a class="text">Home > home-page</a>
+          <a class="text">Home Page</a>
         </div>
         <div class="search-bar">
           <input type="search" />
@@ -20,6 +20,31 @@
         </div>
       </div>
 
+      <div class="home-page-wrapper__bottom">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </main>
+
+  <main class="main-container banner" *ngIf="isVisibleBanner">
+    <div class="banner-wrapper">
+      <div class="title-wrapper">
+        <div class="topic-title">
+          <div class="title-pipe"></div>
+          Lorem Ipsum Dolor Dit Amet
+        </div>
+
+        <div class="search-bar">
+          <input type="search" />
+          <div class="input-text">Search...</div>
+          <div class="search-icon">
+            <img src="assets/images/search_icon.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-page-wrapper">
       <div class="home-page-wrapper__bottom">
         <router-outlet></router-outlet>
       </div>

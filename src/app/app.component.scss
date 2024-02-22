@@ -6,6 +6,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 2;
   }
 
   .main-container {
@@ -14,7 +15,6 @@
     align-items: center;
     padding-top: 130px;
     margin: 0 auto;
-    max-width: 80%;
 
     .home-page-wrapper {
       display: flex;
@@ -22,20 +22,21 @@
       align-items: center;
       flex-direction: column;
       width: 100%;
-    
+      max-width: 80%;
+
       .home-page-wrapper__top {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-    
+
         .router-link {
           display: inline-flex;
           align-items: center;
           background-color: #f7efe6;
           height: 30px;
           border-radius: 3px;
-    
+
           .home-img {
             height: 100%;
             width: 25px;
@@ -44,7 +45,7 @@
             align-items: center;
             justify-content: center;
             background-color: #efe0cd;
-    
+
             img {
               width: 16px;
               height: 16px;
@@ -57,20 +58,20 @@
             color: #3e577e;
           }
         }
-    
+
         .search-bar {
           position: relative;
           margin: 20px 0;
           height: 30px;
           width: 200px;
-    
+
           input {
             height: 100%;
             width: 100%;
             border: none;
             border-radius: 4px;
           }
-    
+
           .input-text {
             position: absolute;
             top: 5px;
@@ -78,7 +79,7 @@
             color: #00000080;
             font-size: 14px;
           }
-    
+
           .search-icon {
             border-radius: 0 4px 4px 0;
             width: 30px;
@@ -87,11 +88,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-    
+
             position: absolute;
             top: 0;
             right: 0;
-    
+
             img {
               width: 16px;
               height: 16px;
@@ -99,12 +100,107 @@
           }
         }
       }
-    
+
       .home-page-wrapper__bottom {
         background-color: white;
         height: 600px;
         width: 100%;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .home-page-wrapper__banner {
+        width: 100%;
+        height: 100%;
+        background-color: #3e577e;
+        position: relative;
+      }
+    }
+
+    &.banner {
+      padding-top: 80px;
+      display: flex;
+      flex-direction: column;
+
+      .banner-wrapper {
+        position: relative;
+        width: 100%;
+        height: 225px;
+        background: url("../assets/images/banner.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        // background-size: 100% 100%;
+        opacity: 0.5;
+
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        .title-wrapper {
+          width: 80%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 35px;
+
+          .topic-title {
+            font-size: 20px;
+            color: black;
+            display: inline-flex;
+
+            .title-pipe {
+              margin-right: 10px;
+              width: 6px;
+              background-color: black;
+            }
+          }
+
+          .search-bar {
+            position: relative;
+            margin: 20px 0;
+            height: 30px;
+            width: 200px;
+
+            input {
+              height: 100%;
+              width: 100%;
+              border: none;
+              border-radius: 4px;
+            }
+
+            .input-text {
+              position: absolute;
+              top: 5px;
+              left: 7px;
+              color: #00000080;
+              font-size: 14px;
+            }
+
+            .search-icon {
+              border-radius: 0 4px 4px 0;
+              width: 30px;
+              height: 100%;
+              background-color: #c7c8cc7d;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              position: absolute;
+              top: 0;
+              right: 0;
+
+              img {
+                width: 16px;
+                height: 16px;
+              }
+            }
+          }
+        }
+      }
+
+      .home-page-wrapper {
+        margin-top: 20px;
       }
     }
   }
