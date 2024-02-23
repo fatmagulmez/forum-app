@@ -36,6 +36,10 @@ export class TopicPageComponent implements OnInit{
     this.router.navigate(['/'])
   }
 
+  openDetailPage() {
+    this.router.navigate(['/topic-detail'])
+  }
+
   
 
 

@@ -36,6 +36,7 @@
           background-color: #f7efe6;
           height: 30px;
           border-radius: 3px;
+          padding-right: 5px;
 
           .home-img {
             height: 100%;
@@ -57,7 +58,15 @@
             width: 100%;
             color: #3e577e;
           }
+
+          &.detail-page {
+            background-color: rgba(239,224,167,255);
+            .home-img {
+              background-color: rgba(244,233,194,255);
+            }
+          }
         }
+
 
         .search-bar {
           position: relative;

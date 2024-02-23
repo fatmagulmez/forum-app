@@ -18,6 +18,7 @@ export class AppComponent implements OnInit {
 
   currentUrl:string = '';
   isVisibleBanner:boolean = false;
+  isDetailPage:boolean = false;
 
   constructor(private router: Router) {
     this.router.events.subscribe((event:any) => {
@@ -26,6 +27,7 @@ export class AppComponent implements OnInit {
         console.log('Current Url: ', this.currentUrl)
 
         this.isVisibleBanner = this.currentUrl === '/topic';
+        this.isDetailPage = this.currentUrl === '/topic-detail'
         
       }
     })
@@ -34,6 +36,14 @@ export class AppComponent implements OnInit {
 
   ngOnInit():void {
   
+  }
+
+  goToHomePage() {
+    this.router.navigate(['/'])
+  }
+
+  goToTopicPage() {
+    this.router.navigate(['/topic'])
   }
 
 

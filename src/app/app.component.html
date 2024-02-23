@@ -5,11 +5,21 @@
   <main class="main-container" *ngIf="!isVisibleBanner">
     <div class="home-page-wrapper">
       <div class="home-page-wrapper__top">
-        <div class="router-link">
+        <div class="router-link" [ngClass]="isDetailPage ? 'detail-page' : ''">
           <div class="home-img">
             <img src="assets/images/home.png" alt="" />
           </div>
-          <a class="text">Home Page</a>
+          <a class="text">
+            <ng-container *ngIf="isDetailPage">
+              <span (click)="goToHomePage()">Home Page</span> > 
+              <span (click)="goToTopicPage()">Topic Page</span> > 
+              <span>Detail Page</span>
+            </ng-container>
+            
+            <ng-container *ngIf="!isDetailPage">
+              <span>Home Page</span>
+            </ng-container>
+          </a>
         </div>
         <div class="search-bar">
           <input type="search" />
