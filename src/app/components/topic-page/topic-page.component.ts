@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { CategoryTable } from '../../interfaces/category-table';
 import { CategoryTableComponent } from '../../shared/category-table/category-table.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-topic-page',
@@ -24,35 +25,17 @@ export class TopicPageComponent implements OnInit{
     }
   ]
 
-  constructor() {
+  constructor(private router : Router) {
 
   }
 
   ngOnInit(): void {
-    this.setCategoryTable()
   }
 
-  setCategoryTable() {
-    this.topicCategoryTableConfig = {
-      headerTitle: 'Category',
-      dataList: this.dataList,
-      columnOptions: [
-        {
-          headerSubtitle: 'Başlık',
-          customClass: 'col-6'
-        },
-        {
-          headerSubtitle: 'Cevaplar',
-          customClass: 'col-3'
-        },
-        {
-          headerSubtitle: 'Konuyu Başlatan',
-          customClass: 'col-3'
-        },
-        
-      ]
-    }
+  openHomePage() {
+    this.router.navigate(['/'])
   }
+
   
 
 
