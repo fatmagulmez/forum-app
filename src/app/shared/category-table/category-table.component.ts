@@ -1,15 +1,21 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
+import { CategoryTable } from '../../interfaces/category-table';
 import { CategoryRowComponent } from '../category-row/category-row.component';
 
 @Component({
   selector: 'app-category-table',
   standalone: true,
-  imports: [CategoryRowComponent],
+  imports: [CategoryRowComponent, CommonModule],
   templateUrl: './category-table.component.html',
   styleUrl: './category-table.component.scss'
 })
 export class CategoryTableComponent {
+  @Input() config: CategoryTable;
 
-  list = [1,2,3,4,5]
+  constructor() {
+    
+
+  }
 
 }

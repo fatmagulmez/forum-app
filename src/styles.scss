@@ -8,5 +8,54 @@ body {
 }
 
 .custom-font {
-  font-family: 'HoboR';
+  font-family: "HoboR";
+}
+
+.plts-table-wrapper {
+  .plts-table {
+    .plts-table__header {
+      padding: 5px 10px;
+      background-color: #e59394;
+
+      display: flex;
+      align-items: center;
+
+      .plts-table__col {
+        font-size: 16px;
+        color: white;
+      }
+    }
+
+    .plts-table__body {
+      .plts-table__subtitle {
+        margin: 1px;
+        background-color: white;
+        padding: 5px;
+        .subtitle-col {
+          color: black;
+          white-space: nowrap;
+          text-align: center;
+        }
+        .subtitle-col:first-child {
+          text-align: start;
+        }
+      }
+      .plts-table__row {
+        background-color: #eeeeee;
+        margin: 1px;
+        .plts-table__col {
+          text-align: center;
+          white-space: nowrap;
+          border-right: 2px solid white;
+          padding: 10px 5px;
+        }
+        .plts-table__col:first-child {
+          text-align: start;
+        }
+        plts-table__col:last-child{
+          border: none;
+        }
+      }
+    }
+  }
 }

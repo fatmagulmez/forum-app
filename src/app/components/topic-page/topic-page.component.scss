@@ -1,0 +1,72 @@
+.topic-page {
+    .router-link {
+        display: inline-flex;
+        align-items: center;
+        background-color: rgba(239,224,167,255);
+        height: 30px;
+        border-radius: 3px;
+
+        .home-img {
+          height: 100%;
+          width: 25px;
+          padding: 0 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: rgba(244,233,194,255);
+
+          img {
+            width: 16px;
+            height: 16px;
+          }
+        }
+        .text {
+          cursor: pointer;
+          margin-left: 10px;
+          width: 100%;
+          color: #5b5d69;
+        }
+      }
+
+    .new-topic-btn {
+        button {
+            border: none;
+            padding: 8px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: rgba(222,190,72,255);
+            color: #fcf9ef;
+        }
+    }
+
+    .table-container {
+      .plts-table--topics {
+        .plts-table__header {
+          background-color: rgba(96,88,89,255);
+        }
+        .plts-table__body {
+          .plts-table__subtitle {
+            .subtitle-col {
+              color: #dfbf4c;
+            }
+          }
+          .plts-table__row {
+            background-color: #fafafa;
+            .plts-table__col {
+              // color: #9c9c9c;
+              color: #505050;
+              
+            }
+            .plts-table__col:first-child{
+              // color: #505050;
+            }
+
+          }
+          .plts-table__row:nth-child(even) {
+            background-color: #eeeeee;
+          }
+        }
+      }
+    }
+}
